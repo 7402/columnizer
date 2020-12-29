@@ -2,9 +2,13 @@
 //  columnizer.cpp
 //
 
+// On Mac:
 // clang++ -std=c++11 -stdlib=libc++ -o columnizer columnizer.cpp
 //   or
 // g++ -std=c++11 -stdlib=libc++ -o columnizer columnizer.cpp
+
+// On Raspberry Pi:
+// g++ -std=c++0x -o columnizer columnizer.cpp
 
 // usage:
 //     columnizer [-t N] [-i <path>] [-o <path>]
@@ -16,6 +20,7 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <cstring>
 
 using namespace std;
 
